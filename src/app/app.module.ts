@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './core/routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -10,13 +10,18 @@ import {
   NbActionsModule,
   NbIconModule,
   NbCardModule,
-  NbSidebarModule
+  NbSidebarModule, NbContextMenuModule, NbMenuModule, NbButtonModule, NbWindowModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { BgImageModule } from './bg-image/bg-image.module';
+import { HomeComponent } from './core/home/home.component';
+import { GalleriesComponent } from './core/galleries/galleries.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    GalleriesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,11 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbCardModule,
     NbLayoutModule,
     NbSidebarModule,
+    BgImageModule,
+    NbMenuModule.forRoot(),
+    NbContextMenuModule,
+    NbButtonModule,
+    NbWindowModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
