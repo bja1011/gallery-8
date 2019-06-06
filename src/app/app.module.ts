@@ -16,18 +16,20 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { BgImageModule } from './bg-image/bg-image.module';
 import { HomeComponent } from './core/home/home.component';
 import { GalleriesComponent } from './core/galleries/galleries.component';
+import { AboutComponent } from './core/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GalleriesComponent
+    GalleriesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({name: 'cosmic'}),
+    NbThemeModule.forRoot({name: 'default'}),
     NbLayoutModule,
     NbEvaIconsModule,
     NbIconModule,

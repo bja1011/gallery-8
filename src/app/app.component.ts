@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NbMenuItem } from '@nebular/theme';
-import { GALLERIES_ROUTE, HOME_ROUTE } from './core/routing/constants';
+import { ABOUT_ROUTE, GALLERIES_ROUTE, HOME_ROUTE } from './core/routing/constants';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,8 @@ import { GALLERIES_ROUTE, HOME_ROUTE } from './core/routing/constants';
 export class AppComponent {
 
   items: NbMenuItem[] = [
-    {title: 'Home', link: HOME_ROUTE},
+    {title: 'Home', link: '/'},
     {title: 'Photos', link: GALLERIES_ROUTE},
-    {title: 'About'},
+    {title: 'About', link: ABOUT_ROUTE},
   ];
-
-
 }

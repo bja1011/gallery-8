@@ -1,2 +1,13 @@
 <app-bg-image></app-bg-image>
 <router-outlet></router-outlet>
+<div class="fixed-container">
+  <nb-layout>
+    <nb-layout-column>
+      <div class="menu">
+        <button ghost nbButton [nbContextMenu]="items" nbContextMenuTag="main">
+          <nb-icon icon="menu"></nb-icon>
+        </button>
+      </div>
+    </nb-layout-column>
+  </nb-layout>
+</div>

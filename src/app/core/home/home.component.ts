@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NbMenuItem } from '@nebular/theme';
-import { GALLERIES_ROUTE, HOME_ROUTE } from '../routing/constants';
+import { ABOUT_ROUTE, GALLERIES_ROUTE, HOME_ROUTE } from '../routing/constants';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   items: NbMenuItem[] = [
     {title: 'Home', link: HOME_ROUTE},
     {title: 'Photos', link: GALLERIES_ROUTE},
-    {title: 'About'},
+    {title: 'About', link: ABOUT_ROUTE},
   ];
 
   constructor() {

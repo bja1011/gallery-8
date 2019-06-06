@@ -3,3 +3,21 @@
   height: 100%;
   display: block;
 }
+
+.fixed-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
